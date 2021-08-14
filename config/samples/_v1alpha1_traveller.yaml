@@ -1,0 +1,7 @@
+apiVersion: my.domain/v1alpha1
+kind: Traveller
+metadata:
+  name: traveller-sample
+spec:
+  # Add fields here
+  foo: bar

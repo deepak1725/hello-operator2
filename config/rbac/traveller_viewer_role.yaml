@@ -1,0 +1,20 @@
+# permissions for end users to view travellers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: traveller-viewer-role
+rules:
+- apiGroups:
+  - my.domain
+  resources:
+  - travellers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - my.domain
+  resources:
+  - travellers/status
+  verbs:
+  - get
